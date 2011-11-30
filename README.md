@@ -1,3 +1,6 @@
-My very trivial config files.
+#My very trivial config files.
 
-TODO: More yak-shaving.
+##Emacs Installation:
+Add the emacs directory to ~/
+
+##TODO: More yak-shaving.
