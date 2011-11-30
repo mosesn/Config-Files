@@ -7,3 +7,4 @@ fi
 
 # User specific aliases and functions
 alias emacs="emacs -nw"
+alias pip="pip-python"
