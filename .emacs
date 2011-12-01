@@ -9,6 +9,13 @@
 
 (setq-default show-trailing-whitespace t)
 
+(add-to-list 'load-path
+              "~/emacs/yasnippet-0.6.1c/")
+
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/emacs/yasnippet-0.6.1c/snippets")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
