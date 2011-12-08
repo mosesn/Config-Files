@@ -32,6 +32,7 @@
 	     (define-key haml-mode-map "\C-m" 'newline-and-indent)))
 
 (setq-default show-trailing-whitespace t)
+(setq-default column-number-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
