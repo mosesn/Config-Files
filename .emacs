@@ -33,6 +33,7 @@
 
 (setq-default show-trailing-whitespace t)
 (setq-default column-number-mode t)
+(setq c-default-style "linux")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
