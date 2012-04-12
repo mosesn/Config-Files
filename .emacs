@@ -1,8 +1,8 @@
-(add-to-list 'load-path "~/emacs/")
-(add-to-list 'load-path "~/emacs/ensime_2.9.1-0.7.6/elisp/")
+(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/ensime_2.9.1-0.7.6/elisp/")
 (add-to-list 'load-path
-              "~/emacs/yasnippet-0.6.1c/")
-(add-to-list 'load-path "~/emacs/scala-mode")
+              "~/.emacs.d/yasnippet-0.6.1c/")
+(add-to-list 'load-path "~/.emacs.d/scala-mode")
 
 (require 'haml-mode)
 (require 'yasnippet) ;; not yasnippet-bundle
@@ -12,8 +12,8 @@
 
 
 (yas/initialize)
-(yas/load-directory "~/emacs/yasnippet-0.6.1c/snippets")
-(setq yas/my-directory "~/emacs/scala-mode/contrib/yasnippet/snippets")
+(yas/load-directory "~/.emacs.d/yasnippet-0.6.1c/snippets")
+(setq yas/my-directory "~/.emacs.d/scala-mode/contrib/yasnippet/snippets")
 (yas/load-directory yas/my-directory)
 (add-hook 'scala-mode-hook
 	  '(lambda ()

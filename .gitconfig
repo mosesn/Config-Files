@@ -1,7 +1,9 @@
 [user]
-	name = Moses
+	name = Moses Nakamura
 	email = nnythm@gmail.com
 [branch]
 	autosetuprebase = always
 [core]
 	editor = emacs
+[alias]
+	la = log --author='Moses'
