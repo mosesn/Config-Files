@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/ensime_2.9.1-0.7.6/elisp/")
 (add-to-list 'load-path
               "~/.emacs.d/yasnippet-0.6.1c/")
@@ -9,7 +9,11 @@
 (require 'scala-mode-auto)
 ;; Load the ensime lisp code...
 (require 'ensime)
+(require 'go-mode)
 
+(add-hook 'go-mode-hook
+	  '(lambda ()
+	     (setq indent-tabs-mode nil)))
 
 (yas/initialize)
 (yas/load-directory "~/.emacs.d/yasnippet-0.6.1c/snippets")
@@ -18,6 +22,7 @@
 (add-hook 'scala-mode-hook
 	  '(lambda ()
 	     (yas/minor-mode-on)
+	     (setq indent-tabs-mode nil)
 	     ))
 ;; This step causes the ensime-mode to be started whenever
 ;; scala-mode is started for a buffer. You may have to customize this step

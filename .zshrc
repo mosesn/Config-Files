@@ -82,7 +82,7 @@ export JAVA_HOME=/usr
 export EC2_HOME=/home/moses/.ec2-tools/
 export SCALA_PATH=/home/moses/scala
 
-PATH=~/bin/:~/node_modules/.bin/:$PATH:$EC2_HOME/bin:$SCALA_PATH/bin:$HOME/.scripts:$HOME/eclipse
+PATH=~/bin/:~/node_modules/.bin/:$PATH:$EC2_HOME/bin:$SCALA_PATH/bin:$HOME/.scripts:$HOME/eclipse:/usr/local/go/bin
 
 # User specific aliases and functions
 alias emacs='emacs -nw'
