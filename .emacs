@@ -10,6 +10,8 @@
 ;; Load the ensime lisp code...
 (require 'ensime)
 (require 'go-mode)
+(require 'php-mode)
+(require 'ido-mode)
 
 (add-hook 'go-mode-hook
 	  '(lambda ()
@@ -36,9 +38,11 @@
 	     (setq indent-tabs-mode nil)
 	     (define-key haml-mode-map "\C-m" 'newline-and-indent)))
 
+(setq ido-enable-flex-matching t)
 (setq-default show-trailing-whitespace t)
 (setq-default column-number-mode t)
 (setq c-default-style "linux")
+(ido-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
