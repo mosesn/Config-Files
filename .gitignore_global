@@ -1,0 +1,16 @@
+# Eclipse Specific
+.cache
+.classpath
+.project
+.settings
+
+# Ensime Specific
+.ensime
+
+# Emacs Specific
+*.elc
+*~
+\#*\#
+
+# Scala Specific
+target
