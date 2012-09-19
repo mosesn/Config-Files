@@ -14,3 +14,8 @@
 
 # Scala Specific
 target
+
+
+# Scalastyle Specific
+.scalastyle
+scalastyle_config.xml
