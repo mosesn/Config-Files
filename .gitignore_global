@@ -14,8 +14,11 @@
 
 # Scala Specific
 target
-
+*.class
 
 # Scalastyle Specific
 .scalastyle
 scalastyle_config.xml
+
+# Play Specific
+.target
