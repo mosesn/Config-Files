@@ -3,5 +3,7 @@
 	email = nnythm@gmail.com
 [core]
 	editor = emacs
+	excludesfile = /Users/moses/.gitignore_global
 [alias]
 	la = log --author='Moses'
+	di = diff-index --name-only
