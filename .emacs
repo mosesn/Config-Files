@@ -1,8 +1,11 @@
 (add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized/")
 (add-to-list 'load-path "~/.emacs.d/ensime_2.9.1-0.7.6/elisp/")
 (add-to-list 'load-path
               "~/.emacs.d/yasnippet-0.6.1c/")
 (add-to-list 'load-path "~/.emacs.d/scala-mode2/")
+
+;(load "~/.emacs.d/nxhtml/autostart.el")
 
 ;(require 'haml-mode)
 (require 'yasnippet) ;; not yasnippet-bundle
@@ -22,15 +25,22 @@
 	     (setq c-basic-offset 4)
 	     (setq-default indent-tabs-mode nil)))
 
+(add-hook 'coffee-mode-hook
+	  '(lambda ()
+	     (setq tab-width 4)))
+
+(load-theme 'solarized-dark t)
+
 ;; (yas/initialize)
 ;; (yas/load-directory "~/.emacs.d/yasnippet-0.6.1c/snippets")
 ;; (setq yas/my-directory "~/.emacs.d/scala-mode/contrib/yasnippet/snippets")
 ;; (yas/load-directory yas/my-directory)
 ;; (add-hook 'scala-mode-hook
-;; 	  '(lambda ()
-;; 	     (yas/minor-mode-on)
-;; 	     (setq indent-tabs-mode nil)
-;; 	     ))
+;;	  '(lambda ()
+;;	     (yas/minor-mode-on)
+;;	     (setq indent-tabs-mode nil)
+;;	     ))
+
 ;; This step causes the ensime-mode to be started whenever
 ;; scala-mode is started for a buffer. You may have to customize this step
 ;; if you're not using the standard scala mode.
@@ -72,6 +82,7 @@
 
   ;; and other bindings here
 ))
+
 
 (add-hook 'haml-mode-hook
 	  '(lambda ()
