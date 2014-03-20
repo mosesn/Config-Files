@@ -50,6 +50,8 @@
 
 (add-hook 'scala-mode-hook '(lambda ()
 
+  (setq scala-indent:use-javadoc-style t)
+
   ;; Bind the 'newline-and-indent' command to RET (aka 'enter'). This
   ;; is normally also available as C-j. The 'newline-and-indent'
   ;; command has the following functionality: 1) it removes trailing
